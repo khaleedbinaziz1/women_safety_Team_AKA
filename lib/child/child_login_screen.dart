@@ -109,7 +109,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     goTo(context, RegisterChildScreen());
                   },
                 ),
-                  SecondaryButton(
+                SecondaryButton(
                   title: 'Register as a Parent',
                   onPressed: () {
                     goTo(context, RegisterParentScreen());
