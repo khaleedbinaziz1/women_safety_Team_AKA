@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:women_safety_app/utils/quotes.dart';
 import 'package:women_safety_app/widgets/home_widgets/safewebview.dart';
 
-class Custom_Carousel extends StatelessWidget {
-  const Custom_Carousel({Key? key}) : super(key: key);
+class CustomCarouel extends StatelessWidget {
+  const CustomCarouel({Key? key}) : super(key: key);
 
   void navigateToRoute(BuildContext context, Widget route) {
     Navigator.push(context, CupertinoPageRoute(builder: (context) => route));

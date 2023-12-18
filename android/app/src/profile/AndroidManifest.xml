@@ -4,4 +4,20 @@
          to allow setting breakpoints, to provide hot reload, etc.
     -->
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+<uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+
+    <!-- <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" /> -->
+
+    <application>
+        <!-- Other manifest elements -->
+
+        <!-- Add the android:exported attribute to the receiver element -->
+        <receiver
+            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+            android:exported="false">
+            <!-- Intent filter and other receiver attributes -->
+        </receiver>
+    </application>
 </manifest>

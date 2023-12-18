@@ -13,29 +13,23 @@ class LiveSafe extends StatelessWidget {
   const LiveSafe({Key? key}) : super(key: key);
 
   static Future<void> openMap(String location) async {
-  String googleUrl = 'https://www.google.com/maps/search/?api=1&query=$location';
+    String googleUrl = 'https://www.google.com/maps/search/$location';
 
-  if (Platform.isAndroid) {
-    try {
-      if (await canLaunch(googleUrl)) {
-        await launch(googleUrl);
+    if (Platform.isAndroid) {
+      if (await canLaunchUrl(Uri.parse(googleUrl))) {
+        await launchUrl(Uri.parse(googleUrl));
       } else {
         throw 'Could not launch $googleUrl';
       }
-    } catch (e) {
-      // Handle the exception, e.g., show a toast message
-      Fluttertoast.showToast(
-        msg: 'Error launching map: $e',
-      );
     }
-  } else {
-    // Handle unsupported platform
-    Fluttertoast.showToast(
-      msg: 'Unsupported platform for map launch',
-    );
+    // final Uri _url = Uri.parse(googleUrl);
+    // try {
+    //   await launchUrl(_url);
+    // } catch (e) {
+    //   Fluttertoast.showToast(
+    //       msg: 'something went wrong! call emergency number');
+    // }
   }
-}
-
 
   @override
   Widget build(BuildContext context) {

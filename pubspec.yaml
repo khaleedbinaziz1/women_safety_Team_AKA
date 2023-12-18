@@ -41,11 +41,8 @@ dependencies:
   flutter_phone_direct_caller: ^2.1.1
   url_launcher: ^6.1.5
   fluttertoast: ^8.0.9
-  # firebase_core: ^2.5.0
-  # firebase_auth: ^4.2.6
-  # cloud_firestore: ^4.3.2
-  # shared_preferences: ^2.0.15
-  permission_handler: ^10.0.2
+  shared_preferences: ^2.0.15
+  permission_handler: ^11.1.0
   contacts_service: ^0.6.3
   sqflite: ^2.2.0+3
   background_sms: ^0.0.4
@@ -54,19 +51,22 @@ dependencies:
   firebase_core: ^2.14.0
   firebase_auth: ^4.2.6
   cloud_firestore: ^4.3.2
-  # image_picker: ^0.8.6+1
-  # uuid: ^3.0.7
-  # firebase_storage: ^11.0.11
-  # cached_network_image: ^3.2.3
+  firebase_storage: ^11.5.6
+  image_picker: ^0.8.6+1
+  uuid: ^3.0.7
+
+  cached_network_image: ^3.2.3
 
 
-  # flutter_background_service: ^2.4.6
-  # flutter_background_service_android: ^3.0.3
-  # flutter_background_service_ios: ^2.4.0
-  # flutter_local_notifications: ^8.2.0
-  # vibration: ^1.7.6
-  # telephony: ^0.2.0
+  flutter_background_service: ^2.4.6
+  flutter_background_service_android: ^3.0.3
+  flutter_background_service_ios: ^2.4.0
+  flutter_local_notifications: ^16.2.0
+  # background_sms: ^0.0.1
+  vibration: ^1.7.6
+  telephony: ^0.2.0
   # flutter_sms: ^2.3.3
+  shake: ^2.2.0
 
 
 dev_dependencies:
